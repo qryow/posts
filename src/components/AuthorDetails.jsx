@@ -10,7 +10,7 @@ const AuthorDetails = () => {
 
   useEffect(() => {
     dispatch(getAuthors());
-  }, [dispatch]);
+  }, []);
 
   const user = authors ? authors.find(user => user.id.toString() === userId) : null;
 
